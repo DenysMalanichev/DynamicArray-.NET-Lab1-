@@ -4,14 +4,14 @@
     "D:\\prog\\MyCollection\\MyCollection\\MyCollectionConsole\\MyCollectionConsole.csproj": {}
   },
   "projects": {
-    "D:\\prog\\MyCollection\\MyCollection\\MyCollectionConsole\\MyCollectionConsole.csproj": {
+    "D:\\prog\\MyCollection\\MyCollection\\DynamicArray\\DynamicArray.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\prog\\MyCollection\\MyCollection\\MyCollectionConsole\\MyCollectionConsole.csproj",
-        "projectName": "MyCollectionConsole",
-        "projectPath": "D:\\prog\\MyCollection\\MyCollection\\MyCollectionConsole\\MyCollectionConsole.csproj",
+        "projectUniqueName": "D:\\prog\\MyCollection\\MyCollection\\DynamicArray\\DynamicArray.csproj",
+        "projectName": "DynamicArray",
+        "projectPath": "D:\\prog\\MyCollection\\MyCollection\\DynamicArray\\DynamicArray.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\prog\\MyCollection\\MyCollection\\MyCollectionConsole\\obj\\",
+        "outputPath": "D:\\prog\\MyCollection\\MyCollection\\DynamicArray\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -31,11 +31,7 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {
-              "D:\\prog\\MyCollection\\MyCollection\\MyCollection\\MyCollection.csproj": {
-                "projectPath": "D:\\prog\\MyCollection\\MyCollection\\MyCollection\\MyCollection.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -67,14 +63,14 @@
         }
       }
     },
-    "D:\\prog\\MyCollection\\MyCollection\\MyCollection\\MyCollection.csproj": {
+    "D:\\prog\\MyCollection\\MyCollection\\MyCollectionConsole\\MyCollectionConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\prog\\MyCollection\\MyCollection\\MyCollection\\MyCollection.csproj",
-        "projectName": "MyCollection",
-        "projectPath": "D:\\prog\\MyCollection\\MyCollection\\MyCollection\\MyCollection.csproj",
+        "projectUniqueName": "D:\\prog\\MyCollection\\MyCollection\\MyCollectionConsole\\MyCollectionConsole.csproj",
+        "projectName": "MyCollectionConsole",
+        "projectPath": "D:\\prog\\MyCollection\\MyCollection\\MyCollectionConsole\\MyCollectionConsole.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\prog\\MyCollection\\MyCollection\\MyCollection\\obj\\",
+        "outputPath": "D:\\prog\\MyCollection\\MyCollection\\MyCollectionConsole\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -94,7 +90,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\prog\\MyCollection\\MyCollection\\DynamicArray\\DynamicArray.csproj": {
+                "projectPath": "D:\\prog\\MyCollection\\MyCollection\\DynamicArray\\DynamicArray.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

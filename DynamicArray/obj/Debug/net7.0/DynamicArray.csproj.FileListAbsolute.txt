@@ -1,0 +1,12 @@
+D:\prog\MyCollection\MyCollection\DynamicArray\bin\Debug\net7.0\DynamicArray.deps.json
+D:\prog\MyCollection\MyCollection\DynamicArray\bin\Debug\net7.0\DynamicArray.dll
+D:\prog\MyCollection\MyCollection\DynamicArray\bin\Debug\net7.0\DynamicArray.pdb
+D:\prog\MyCollection\MyCollection\DynamicArray\obj\Debug\net7.0\DynamicArray.csproj.AssemblyReference.cache
+D:\prog\MyCollection\MyCollection\DynamicArray\obj\Debug\net7.0\DynamicArray.GeneratedMSBuildEditorConfig.editorconfig
+D:\prog\MyCollection\MyCollection\DynamicArray\obj\Debug\net7.0\DynamicArray.AssemblyInfoInputs.cache
+D:\prog\MyCollection\MyCollection\DynamicArray\obj\Debug\net7.0\DynamicArray.AssemblyInfo.cs
+D:\prog\MyCollection\MyCollection\DynamicArray\obj\Debug\net7.0\DynamicArray.csproj.CoreCompileInputs.cache
+D:\prog\MyCollection\MyCollection\DynamicArray\obj\Debug\net7.0\DynamicArray.dll
+D:\prog\MyCollection\MyCollection\DynamicArray\obj\Debug\net7.0\refint\DynamicArray.dll
+D:\prog\MyCollection\MyCollection\DynamicArray\obj\Debug\net7.0\DynamicArray.pdb
+D:\prog\MyCollection\MyCollection\DynamicArray\obj\Debug\net7.0\ref\DynamicArray.dll

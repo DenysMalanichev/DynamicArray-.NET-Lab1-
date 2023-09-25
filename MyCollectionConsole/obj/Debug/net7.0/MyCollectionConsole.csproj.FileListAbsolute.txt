@@ -8,11 +8,11 @@ D:\prog\MyCollection\MyCollection\MyCollectionConsole\bin\Debug\net7.0\MyCollect
 D:\prog\MyCollection\MyCollection\MyCollectionConsole\bin\Debug\net7.0\MyCollectionConsole.runtimeconfig.json
 D:\prog\MyCollection\MyCollection\MyCollectionConsole\bin\Debug\net7.0\MyCollectionConsole.dll
 D:\prog\MyCollection\MyCollection\MyCollectionConsole\bin\Debug\net7.0\MyCollectionConsole.pdb
-D:\prog\MyCollection\MyCollection\MyCollectionConsole\bin\Debug\net7.0\MyCollection.dll
-D:\prog\MyCollection\MyCollection\MyCollectionConsole\bin\Debug\net7.0\MyCollection.pdb
 D:\prog\MyCollection\MyCollection\MyCollectionConsole\obj\Debug\net7.0\MyCollectionConsole.csproj.CopyComplete
 D:\prog\MyCollection\MyCollection\MyCollectionConsole\obj\Debug\net7.0\MyCollectionConsole.dll
 D:\prog\MyCollection\MyCollection\MyCollectionConsole\obj\Debug\net7.0\refint\MyCollectionConsole.dll
 D:\prog\MyCollection\MyCollection\MyCollectionConsole\obj\Debug\net7.0\MyCollectionConsole.pdb
 D:\prog\MyCollection\MyCollection\MyCollectionConsole\obj\Debug\net7.0\MyCollectionConsole.genruntimeconfig.cache
 D:\prog\MyCollection\MyCollection\MyCollectionConsole\obj\Debug\net7.0\ref\MyCollectionConsole.dll
+D:\prog\MyCollection\MyCollection\MyCollectionConsole\bin\Debug\net7.0\DynamicArray.dll
+D:\prog\MyCollection\MyCollection\MyCollectionConsole\bin\Debug\net7.0\DynamicArray.pdb

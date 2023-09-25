@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCollectionConsole", "MyCollectionConsole\MyCollectionConsole.csproj", "{9E90370C-8C52-4BF0-96B5-ACBE1DC5DC75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCollection", "MyCollection\MyCollection.csproj", "{EFF32279-DC79-4822-A451-95102AF03C13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicArray", "DynamicArray\DynamicArray.csproj", "{EFF32279-DC79-4822-A451-95102AF03C13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,16 +5,17 @@
         private static void Main()
         {
             var list = new DynamicArray<int>(5) { 1, 2, 3, 4, 5 };
-            
+
             Console.WriteLine("Iterate using foreach loop:");
             PrintList(list);
 
             Console.WriteLine("Indexers:");
-            Console.WriteLine(list[0]);
-            Console.WriteLine(list[1]);
-            Console.WriteLine(list[2]);
-            Console.WriteLine(list[3]);
-            Console.WriteLine(list[4]);
+            Console.Write(list[0] + " ");
+            Console.Write(list[1] + " ");
+            Console.Write(list[2] + " ");
+            Console.Write(list[3] + " ");
+            Console.Write(list[4] + " ");
+            Console.WriteLine();
 
             Console.WriteLine("Remove at index 1:");
             list.RemoveAt(1);
@@ -39,20 +40,16 @@
 
             Console.WriteLine("Find an index of 9");
             Console.WriteLine(list.IndexOf(9));
-
-            var list2 = new DynamicArray<int>(new List<int> { 1, 2, 3, 4, 5, 6 });
-            foreach (var i in list2)
-            {
-                Console.WriteLine(i);   
-            }
         }
-        
+
         private static void PrintList(DynamicArray<int> list)
         {
             foreach (var i in list)
             {
-                Console.WriteLine(i);
+                Console.Write(i + " ");
             }
+
+            Console.WriteLine();
         }
     }
 }

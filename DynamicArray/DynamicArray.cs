@@ -1,4 +1,5 @@
 using System.Collections;
+using MyCollection.EventsArgs;
 
 namespace MyCollection;
 
@@ -12,7 +13,29 @@ public class DynamicArray<T> : IList<T>, IReadOnlyList<T>
     private int _size;
     private int _capacity;
     private T[] _items;
+
+    public event EventHandler<ItemManipulationEventArgs<T>> ItemAdded = null!;
+    public event EventHandler<ItemManipulationEventArgs<T>> ItemRemoved = null!;
+    public event EventHandler<DynamicArrayResizedEventArgs> DynamicArrayResized = null!;
+
+    protected virtual void OnItemAdded(T item, int index)
+    {
+        // ReSharper disable once ConditionalAccessQualifierIsNonNullableAccordingToAPIContract
+        ItemAdded?.Invoke(this, new ItemManipulationEventArgs<T>(item, index));
+    }
     
+    protected virtual void OnItemRemoved(T item, int index)
+    {
+        // ReSharper disable once ConditionalAccessQualifierIsNonNullableAccordingToAPIContract
+        ItemRemoved?.Invoke(this, new ItemManipulationEventArgs<T>(item, index));
+    } 
+    
+    protected virtual void OnDynamicArrayResized(int oldSize, int newSize)
+    {
+        // ReSharper disable once ConditionalAccessQualifierIsNonNullableAccordingToAPIContract
+        DynamicArrayResized?.Invoke(this, new DynamicArrayResizedEventArgs(oldSize, newSize));
+    }
+
     public T this[int index]
     {
         get => _items[index];
@@ -82,6 +105,21 @@ public class DynamicArray<T> : IList<T>, IReadOnlyList<T>
 
         _items[_size] = item;
         _size++;
+        
+        OnItemAdded(item, _size);
+    }
+
+    public void AddRange(IEnumerable<T> items)
+    {
+        if (items is null)
+        {
+            throw new ArgumentNullException(nameof(items));
+        }
+        
+        foreach (var item in items)
+        {
+            Add(item);
+        }
     }
 
     public void Clear()
@@ -158,8 +196,12 @@ public class DynamicArray<T> : IList<T>, IReadOnlyList<T>
             throw new ArgumentOutOfRangeException(nameof(index));
         }
 
+        var item = _items[index];
+        
         _size--;
         Array.Copy(_items, index + 1, _items, index, _size - index);
+        
+        OnItemRemoved(item, index);
     }
 
     private void Resize()
@@ -169,5 +211,7 @@ public class DynamicArray<T> : IList<T>, IReadOnlyList<T>
         Array.Copy(_items, tempArray, _size);
         _items = tempArray;
         _capacity = newCapacity;
+        
+        OnDynamicArrayResized(newCapacity / 2, newCapacity);
     }
 }
