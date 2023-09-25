@@ -40,6 +40,31 @@
 
             Console.WriteLine("Find an index of 9");
             Console.WriteLine(list.IndexOf(9));
+
+            var list2 = new DynamicArray<int>(new List<int> { 1, 2, 3, 4, 5, 6 });
+            PrintList(list2);
+
+            list.ItemAdded += (sender, args) =>
+            {
+                Console.WriteLine(
+                    $@"New item with value {args.Item} was added at index {args.Index} (object: {sender}).");
+            };
+
+            list.ItemRemoved += (sender, args) =>
+            {
+                Console.WriteLine(
+                    $@"Item with value {args.Item} was removed from index {args.Index} (object: {sender}).");
+            };
+
+            list.DynamicArrayResized += (sender, args) =>
+            {
+                Console.WriteLine(
+                    $@"Object: {{sender}} has just resized from capacity {args.OldCapacity} to {args.NewCapacity} ");
+            };
+
+            list.AddRange(new[] { 100, 101, 102, 103, 104, 105 });
+
+            list.Remove(102);
         }
 
         private static void PrintList(DynamicArray<int> list)
