@@ -34,10 +34,7 @@ internal class DynamicArrayEnumerator<T> : IEnumerator<T>
         _cursor = 0;
         _current = _list[0];
     }
-
     
-
-
     public void Dispose()
     {
     }

@@ -20,19 +20,16 @@ public class DynamicArray<T> : IList<T>, IReadOnlyList<T>
 
     protected virtual void OnItemAdded(T item, int index)
     {
-        // ReSharper disable once ConditionalAccessQualifierIsNonNullableAccordingToAPIContract
         ItemAdded?.Invoke(this, new ItemManipulationEventArgs<T>(item, index));
     }
     
     protected virtual void OnItemRemoved(T item, int index)
     {
-        // ReSharper disable once ConditionalAccessQualifierIsNonNullableAccordingToAPIContract
         ItemRemoved?.Invoke(this, new ItemManipulationEventArgs<T>(item, index));
     } 
     
     protected virtual void OnDynamicArrayResized(int oldSize, int newSize)
     {
-        // ReSharper disable once ConditionalAccessQualifierIsNonNullableAccordingToAPIContract
         DynamicArrayResized?.Invoke(this, new DynamicArrayResizedEventArgs(oldSize, newSize));
     }
 

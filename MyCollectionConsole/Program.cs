@@ -59,7 +59,7 @@
             list.DynamicArrayResized += (sender, args) =>
             {
                 Console.WriteLine(
-                    $@"Object: {sender} has just resized from capacity {args.OldCapacity} to {args.NewCapacity} ");
+                    $@"Object: {sender} has just resized from capacity {args.OldCapacity} to {args.NewCapacity}.");
             };
 
             list.AddRange(new[] { 100, 101, 102, 103, 104, 105 });
