@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCollectionConsole", "MyCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicArray", "DynamicArray\DynamicArray.csproj", "{EFF32279-DC79-4822-A451-95102AF03C13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicArray.Tests", "DynamicArray.Tests\DynamicArray.Tests.csproj", "{3D549128-CBE2-4C13-A093-56BB647507E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{EFF32279-DC79-4822-A451-95102AF03C13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFF32279-DC79-4822-A451-95102AF03C13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFF32279-DC79-4822-A451-95102AF03C13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D549128-CBE2-4C13-A093-56BB647507E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D549128-CBE2-4C13-A093-56BB647507E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D549128-CBE2-4C13-A093-56BB647507E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D549128-CBE2-4C13-A093-56BB647507E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

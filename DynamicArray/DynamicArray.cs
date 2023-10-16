@@ -35,10 +35,17 @@ public class DynamicArray<T> : IList<T>, IReadOnlyList<T>
 
     public T this[int index]
     {
-        get => _items[index];
+        get
+        {
+            if (index < 0 || index >= _size)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            return _items[index];
+        }
         set 
         {
-            if(index >= _size)
+            if(index >= _size || index < 0)
             {
                 throw new ArgumentException("Invalid index");
             }
@@ -154,7 +161,10 @@ public class DynamicArray<T> : IList<T>, IReadOnlyList<T>
         var index = Array.IndexOf(_items, item);
         var isRemoved = index != -1;
 
-        RemoveAt(index);
+        if (isRemoved)
+        {
+            RemoveAt(index);
+        }
 
         return isRemoved;
     }
@@ -166,9 +176,9 @@ public class DynamicArray<T> : IList<T>, IReadOnlyList<T>
 
     public void Insert(int index, T item)
     {
-        if (_size < index)
+        if (index < 0 || _size < index)
         {
-            throw new InvalidOperationException("Invalid index");
+            throw new IndexOutOfRangeException("Invalid index");
         }
 
         if (_size == _capacity)
@@ -190,7 +200,7 @@ public class DynamicArray<T> : IList<T>, IReadOnlyList<T>
     {
         if (index < 0 || index > _size)
         {
-            throw new ArgumentOutOfRangeException(nameof(index));
+            throw new IndexOutOfRangeException(nameof(index));
         }
 
         var item = _items[index];
